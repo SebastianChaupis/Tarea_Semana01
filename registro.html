@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Registro de Personas</h1>
+    <form method="" action="">
+      <p>
+          <label><strong>Nombre :</strong></label>
+        <input type="text" placeholder="Ingrese su nombre" required />
+      </p>
+      <p>
+        <label><strong>Apellido :</strong></label>
+        <input type="text" placeholder="Ingrese su apellido" required />
+      </p>
+      <p>
+        <label><strong>Correo :</strong></label>
+        <input type="email" placeholder="Ingrese su correo" required />
+      </p>
+      <p>
+        <label><strong>Contraseña :</strong></label>
+        <input type="password" placeholder="Ingrese su password" required />
+      </p>
+      <p>
+        <label><strong>DNI :</strong></label>
+        <input
+          type="text"
+          placeholder="Ingrese su DNI"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          maxlength="8"
+          minlength="8" required
+        />
+      </p>
+      <p>
+        <label><strong>Edad :</strong></label>
+        <input type="number" placeholder="Ingrese su edad" />
+      </p>
+
+      <p>
+        <p><label><strong>Seleccione su Genero:</strong></label></p>
+        <input type="radio" name="genero_registro"/>Masculino
+        <input type="radio" name="genero_registro" />Femenino
+      </p>
+      <p>
+          <p><label><strong>Fecha de Nacimiento</strong></label></p>
+          <input type="date" required/>
+      </p>
+      <p>
+          <p><Label><strong>Seleccione su color preferido</strong></Label></p>
+        <input type="color" required/>
+      </p>
+      <p>
+          <p><label"><strong>Seleccione foto de perfil</strong></label></p>
+        <input type="file" accept="image/*" />
+      </p>
+      <p>
+         <input type="submit" style="width: 100px; height: 40px;"/>
+    </p>
+    </form>
+  </body>
+</html>
